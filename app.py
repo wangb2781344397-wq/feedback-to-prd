@@ -10,8 +10,8 @@
 # ====================== ① 配置区（兜底默认值） ======================
 # 以下三个变量是「兜底默认值」，仅在未通过 secrets / 环境变量 / 边栏提供时使用。
 # 优先级：部署平台 secrets / 环境变量  >  页面左侧边栏填写  >  本处硬编码值。
-# 部署到 Streamlit Cloud 时，请在 Cloud 控制台的 Secrets 里配置 API_KEY / BASE_URL / MODEL_NAME，
-# 切勿把真实 Key 写进代码提交到仓库。
+# 部署到 Hugging Face Spaces 时，请在 Space 的 Settings → Repository secrets 里配置
+# API_KEY / BASE_URL / MODEL_NAME（它们会以环境变量形式注入），切勿把真实 Key 写进代码。
 API_KEY    = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"   # TODO: 替换为你的真实 API Key
 BASE_URL   = "https://api.deepseek.com/v1"   # DeepSeek 示例；OpenAI 用 https://api.openai.com/v1
 MODEL_NAME = "deepseek-chat"                 # DeepSeek 示例；OpenAI 用 gpt-4o / gpt-4o-mini
