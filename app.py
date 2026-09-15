@@ -309,6 +309,7 @@ PREMIUM_CSS = """
 .stApp{
   background:linear-gradient(180deg,#eaf0fb 0%, #f6f8fc 200px, #f6f8fc 100%);
 }
+[data-testid="stHeader"]{display:none;}
 .block-container{padding-top:.75rem;}
 .title-card{
   width:100%;padding:18px 22px;border-radius:14px;
